@@ -2,11 +2,27 @@
 <html>
     <head>
         <title>Headers Parser</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+          <link href="/stylesheets/main.css" rel="stylesheet" >
     </head>
     <body>
-        <h1>Home page</h1>
-        <p><%= headers['accept-language'].slice(0,5) %></p>
-        <p><%= headers['x-forwarded-for'] %></p>
-        <p><%=  useragent.os%></p>
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron col-lg-12 col-md-9">
+                    <h1 class="">Headparsers Microservice</h1>
+                    <div class="thumbnail">
+                         <p> Language: <%= headers['accept-language'].slice(0,5) %></p>
+                    </div>
+                    <div class="thumbnail">
+                        <p> IP address: <%= headers['x-forwarded-for'] %></p>
+                    </div>
+                    <div class="thumbnail">
+                         <p>Operating System: <%=  useragent.os%></p>
+                    </div>
+               </div>
+            </div>
+        </div>
     </body>
 </html>

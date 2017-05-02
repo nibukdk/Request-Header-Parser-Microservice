@@ -8,16 +8,14 @@ var express= require("express"),
      
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(useragent.express());
+    app.use(express.static(__dirname+'/public'));
     
   
     app.get('/',function(req,res){
         var headers= req.headers;
         var useragent= req.useragent;
-       res.render('home',{headers: headers, useragent: useragent });
-      
-         console.log(req.useragent);
-      
-    }); 
+        res.render('home',{headers: headers, useragent: useragent });
+      }); 
     
     
     app.listen(3000);
