@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Headers Parser</title>
+    </head>
+    <body>
+        <h1>Home page</h1>
+        <p><%= headers['accept-language'].slice(0,5) %></p>
+        <p><%= headers['x-forwarded-for'] %></p>
+        <p><%=  useragent.os%></p>
+    </body>
+</html>
