@@ -1,0 +1,24 @@
+{
+  "name": "paser_project",
+  "version": "1.0.0",
+  "description": "Small back end project to get Ip address, language and operating system of the browser",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nibukdk/Request-Header-Parser-Microservice.git"
+  },
+  "author": "Nibesh Khadka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nibukdk/Request-Header-Parser-Microservice/issues"
+  },
+  "homepage": "https://github.com/nibukdk/Request-Header-Parser-Microservice#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  }
+}
